@@ -59,3 +59,21 @@ function inscreverEmail() {
       alert("Por favor, insira um e-mail válido.");
     }
   }
+
+// Botão que scrolla pro topo da página:
+const scrollUpBtn = document.getElementById('scrollUpBtn');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY === 0) {
+    scrollUpBtn.classList.add('hidden');
+  } else {
+    scrollUpBtn.classList.remove('hidden');
+  }
+});
+
+scrollUpBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
