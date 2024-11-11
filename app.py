@@ -324,4 +324,4 @@ def editar_voluntario(id_voluntario):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
