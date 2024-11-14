@@ -8,7 +8,7 @@ header.style.width = '100%';
 window.addEventListener('scroll', function() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (scrollTop > lastScrollTop) {
-    header.style.top = "-100px";
+    header.style.top = "-300px";
   } else {
     header.style.top = "0";
   }

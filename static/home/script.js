@@ -28,7 +28,6 @@ for (let i = 1; i <= 4; i++) {
 
 
 
-
 // header 
 let lastScrollTop = 0;
 const header = document.querySelector('.custom-header');
@@ -38,7 +37,7 @@ window.addEventListener('scroll', function() {
 
     if (scrollTop > lastScrollTop) {
         // Esconde o header quando o usuário rolar para baixo
-        header.style.top = "-100px"; // ajuste o valor com base na altura do seu header
+        header.style.top = "-200px"; // ajuste o valor com base na altura do seu header
     } else {
         // Mostra o header quando o usuário rolar para cima
         header.style.top = "0";
