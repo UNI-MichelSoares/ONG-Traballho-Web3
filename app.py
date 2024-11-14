@@ -1,14 +1,19 @@
 from flask import Flask, render_template, request, redirect, url_for
+from dotenv import load_dotenv
+import os
 import mysql.connector
+
+load_dotenv()
 
 app = Flask(__name__)
 
 def get_db_connection():
     return mysql.connector.connect(
-        host='localhost',
-        user='root',
-        passwd='89595959',
-        database='semeando_alegria'
+        host=os.getenv("DB_HOST"),
+        user=os.getenv("DB_USER"),
+        passwd=os.getenv("DB_PASSWORD"),
+        database=os.getenv("DB_NAME"),
+        port=os.getenv("DB_PORT")
     )
 
 # Endereçamento da página principal:
