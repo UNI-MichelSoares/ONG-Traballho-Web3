@@ -26,7 +26,7 @@ os parceiros, voluntários e as despesas da ONG.
 
 ### Clone o repositório:
 * ```sh
-  git clone https://github.com/UNI-MichelSoares/semeando-alegria.git
+  git clone https://github.com/UNI-MichelSoares/ONG-Traballho-Web3
   ```
 ### Instale as dependências:
 * Flask:
